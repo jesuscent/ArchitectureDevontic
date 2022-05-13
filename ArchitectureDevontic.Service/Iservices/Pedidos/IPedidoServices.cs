@@ -14,6 +14,6 @@ namespace ArchitectureDevontic.Service.Iservices.Pedidos
         Task<Pedido> GetPedido(int PedidoId);
         Task<ResponseHelper> DeletePedido(int PedidoId);
         Task<ResponseHelper> Edit(Pedido pedido);
-        Task<List<Pedido>> GetPedidoByProductoId(int Id);
+        Task<List<Pedido>> GetPedidoByProductoId(int ProductoId);
     }
 }

@@ -37,13 +37,13 @@ namespace ArchitectureDevontic.Web.Controllers
             }
         }
         [HttpGet]
-        [Route("GetPedidoByProductoId/{PedidoId}")]
-        public async Task<IActionResult> GetPedidoByProductoId(int PedidoId)
+        [Route("GetPedidoByProductoId/{ProductoId}")]
+        public async Task<IActionResult> GetPedidoByProductoId(int ProductoId)
         {
             var response = new List<Pedido>();
             try
             {
-                response = await _pedidoServices.GetPedidoByProductoId(PedidoId);
+                response = await _pedidoServices.GetPedidoByProductoId(ProductoId);
                 return Ok(response);
             }
             catch (Exception)

@@ -83,9 +83,9 @@ namespace ArchitectureDevontic.Service.Services.Pedidos
             return await _pedidosRepository.GetPedido(PedidoId);
         }
 
-        public async Task<List<Pedido>> GetPedidoByProductoId(int Id)
+        public async Task<List<Pedido>> GetPedidoByProductoId(int ProductoId)
         {
-            return await _pedidosRepository.GetPedidoByProductoId(Id);
+            return await _pedidosRepository.GetPedidoByProductoId(ProductoId);
         }
     }
 }
